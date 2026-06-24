@@ -1,0 +1,82 @@
+.App {
+  min-height: 100vh;
+}
+
+/* Login page wrapper */
+.page {
+  padding: 28px;
+}
+
+.page-header {
+  margin-bottom: 20px;
+}
+
+.brand {
+  font-size: 42px;
+  margin: 0;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, var(--bg1), var(--bg2), var(--bg3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+/* Dashboard-specific */
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.toolbar textarea {
+  flex: 1 1 420px;
+  min-height: 120px;
+}
+
+.panel {
+  margin-bottom: 20px;
+}
+
+.panel-title {
+  margin: 0 0 10px;
+}
+
+/* Make textarea match theme */
+textarea {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .brand {
+    animation: brandPulse 6s ease-in-out infinite;
+  }
+
+  @keyframes brandPulse {
+    0%,
+    100% {
+      filter: saturate(1);
+    }
+    50% {
+      filter: saturate(1.25);
+    }
+  }
+}
+
