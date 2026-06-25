@@ -2,7 +2,8 @@ fastapi
 uvicorn
 pymongo
 python-dotenv
-scikit-learn
 pandas
 numpy
+scikit-learn
 joblib
+textblob
